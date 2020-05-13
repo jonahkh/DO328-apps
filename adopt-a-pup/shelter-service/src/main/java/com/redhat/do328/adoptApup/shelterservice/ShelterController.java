@@ -31,7 +31,7 @@ public class ShelterController {
 
     @RequestMapping(value = "/{shelter-id}/getShelter", method = RequestMethod.GET)
     public Shelter getShelterById(@PathVariable(value = "shelter-id") String shelterId) {
-        System.out.println("hello world");
+        System.out.println("hello");
         return shelterService.getShelterById(shelterId);
     }
 }
